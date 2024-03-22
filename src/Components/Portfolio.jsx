@@ -9,7 +9,6 @@
  */
 
 import React from "react";
-
 /**
  * Desk image
  *
@@ -30,29 +29,23 @@ const imageAltText = "desktop with books and laptop";
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
 const projectList = [
-  {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
-  },
-  {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
-  },
+  // {
+  //   title: "NYUAD Chatbot",
+  //   description:
+  //     "A project using Microsoft AI to create a chatbot for my university using their FAQ page as a knowledge base.",
+  //   url: "https://docs.google.com/presentation/d/11e30wWzuOWdREKZ4obPGe0j-pqbLeNN3Feft1yas6GE/edit",
+  // },
   {
     title: "My Resume Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and skills.",
+    url: "https://dea-li00.github.io/Resume/", // Replace with the actual URL
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Human Centered Data Science Project",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Used web scraping to gather article titles from 3 major media platforms in the US, India and China, respecitvely. Used topic analysis and sentiment analysis to determine the tone used in mass media towards these communities. The results were later compared with the public opinion drawn by a sample of 40 students representing the countries where our research was based.",
+    url: "https://docs.google.com/presentation/d/11e30wWzuOWdREKZ4obPGe0j-pqbLeNN3Feft1yas6GE/edit", // Replace with the actual URL
   },
 ];
 
