@@ -20,17 +20,17 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/woman-with-tablet.jpg";
+import image from "../images/woman-with-tablet.png";
 
-const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
+const imageAltText = "Female working in a Microsoft Surface";
 
-const Home = ({ name, title }) => {
+const Home = ({ name, title, nameStyle, titleStyle }) => {
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1>{name}</h1>
-        <h2>{title}</h2>
+        <h1 style={nameStyle}>{name}</h1>
+        <h2 style={titleStyle}>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
@@ -42,11 +42,15 @@ const Home = ({ name, title }) => {
 Home.defaultProps = {
   name: "",
   title: "",
+  nameStyle: { color: "white" },
+  titleStyle: { color: "white" },
 };
 
 Home.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  nameStyle: PropTypes.object, // PropType for name style object
+  titleStyle: PropTypes.object,
 };
 
 export default Home;
